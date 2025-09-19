@@ -461,7 +461,7 @@ class DataManager:
         except Exception as e:
             logger.error(f"清理旧数据失败: {e}")
     
-    def export_data(self, export_type: str = 'csv', date_range: Optional[Tuple[str, str]] = None):
+    def export_data(self, export_type: str = 'csv', date_range: Optional[tuple[str, str]] = None):
         """导出数据"""
         try:
             export_dir = self.data_dir / 'exports'
