@@ -3,8 +3,8 @@
 # 交易所配置
 exchange:
   name: binance
-  apiKey: xxx
-  secretKey: xxx
+  apiKey: NHrvj0USAM3ICqlUKhQ9uHx5XpYNcDYc2Rvr0EEijTXmS5zomuw3cioB2cICWljy
+  secretKey: PfM76bHCSvS2tf7rHHPf3RmGJzMcH9oufoTm1H6SfpbQcs8RDP1lXxDaGS8oM0C1
   sandbox: false  # 是否使用测试环境
   rateLimit: 1200
   enableRateLimit: true
@@ -24,7 +24,7 @@ trading:
   trade_amount: 20  # 每笔交易数量(EOS)
   timeframe: 1h     # K线周期 可选: 1m, 5m, 15m, 30m, 1h, 4h, 1d
   trade_type: spot  # spot现货 / futures合约
-  
+
 # 策略参数
 strategy:
   name: TrendFollowing
@@ -58,21 +58,21 @@ strategy:
   signals:
     trend_confirmation_bars: 2  # 趋势确认K线数量
     volume_threshold: 1.2       # 成交量倍数阈值
-    
+
   # 风险管理
   risk_management:
     stop_loss_pct: 2.0      # 止损百分比
     take_profit_pct: 4.0    # 止盈百分比
     max_position_size: 100  # 最大持仓数量
     max_daily_trades: 10    # 每日最大交易次数
-    
+
 # 日志配置
 logging:
   level: INFO
   file: logs/trading_bot.log
   max_size: 10MB
   backup_count: 5
-  
+
 # 数据存储
 data:
   save_trades: true
